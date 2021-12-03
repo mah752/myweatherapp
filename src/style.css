@@ -25,7 +25,6 @@
             footer {
                 margin-bottom: 10px;
                 margin-left: 10px;
-                padding: 10px;
             }
             
             button {
@@ -125,6 +124,6 @@
             
             #sourcecode {
                 position: absolute;
-                bottom: 0;
+                bottom: 10;
                 left: 0;
             }
