@@ -1,0 +1,122 @@
+            body {
+                font-family: "Ubuntu Mono", monospace;
+                margin-left: 80px;
+                margin-right: 80px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                background-color: rgba(25, 144, 241, 0.479);
+                border: none;
+                color: white;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            h2 {
+                font-size: 15px;
+            }
+            
+            footer {
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            
+            button {
+                margin: 10px 10px;
+            }
+            
+            .border {
+                margin: auto;
+                width: 50%;
+                border: 1px solid blue;
+                border-radius: 25px;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .container {
+                width: 50%;
+                position: fixed;
+            }
+            
+            .left,
+            .right,
+            .center {
+                float: left;
+                width: 33%;
+                color: white;
+                height: 320px;
+                text-align: center;
+                border: none;
+            }
+            
+            .left {
+                background-color: rgba(25, 144, 241, 0.3);
+                border-left: 1px solid rgb(0, 85, 155);
+                border-top: 1px solid rgb(0, 85, 155);
+                border-bottom: 1px solid rgb(0, 85, 155);
+            }
+            
+            .right {
+                background-color: rgba(25, 144, 241, 0.3);
+                border-right: 1px solid rgb(0, 85, 155);
+                border-top: 1px solid rgb(0, 85, 155);
+                border-bottom: 1px solid rgb(0, 85, 155);
+            }
+            
+            .center {
+                background-color: rgba(25, 144, 241, 0.3);
+                border-top: 1px solid rgb(0, 85, 155);
+                border-bottom: 1px solid rgb(0, 85, 155);
+            }
+            
+            .container:after {
+                clear: both;
+            }
+            
+            .celcius,
+            .faranheit {
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+            .celcius:hover {
+                color: rgba(255, 187, 0, 0.959);
+                cursor: pointer;
+            }
+            
+            .faranheit:hover {
+                color: rgba(255, 187, 0, 0.959);
+                cursor: pointer;
+            }
+            
+            #searchicon:hover {
+                cursor: pointer;
+            }
+            
+            .card {
+                background-color: rgba(25, 144, 241, 0.2);
+            }
+            
+            #dayforecast .forecast i,
+            h1 {
+                margin-top: 10px;
+            }
+            
+            #myVideo {
+                width: auto;
+                height: auto;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                filter: brightness(60%);
+            }
