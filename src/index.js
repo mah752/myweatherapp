@@ -92,15 +92,15 @@ function displayWeather(response) {
     let weatherDiv = document.querySelector("#temp-input");
     let temperature = Math.round(response.data.main.temp);
     weatherDiv.innerHTML = `${temperature}°C`;
-    //fahrenheit temperature
-    function displayFarenheitTemperature(event) {
-        event.preventDefault();
-        let temperatureElement = document.querySelector("#temp-input");
-        let fahrenheittemp = (temperature * 9) / 5 + 32;
-        temperatureElement.innerHTML = Math.round(
-            fahrenheittemp
-        );
-    }
+}
+//fahrenheit temperature
+function displayFarenheitTemperature(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temp-input");
+    let fahrenheittemp = (temperature * 9) / 5 + 32;
+    temperatureElement.innerHTML = Math.round(
+        fahrenheittemp
+    );
     let fahrenheitLink = document.querySelector(".faranheit");
     fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
 
