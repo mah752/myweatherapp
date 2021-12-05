@@ -86,6 +86,7 @@ function handleSubmit(event) {
     let cityInput = document.querySelector("#search-input").value;
     searchCity(cityInput);
 }
+
 //This city will show by default
 searchCity("London");
 
@@ -96,13 +97,13 @@ inputForm.addEventListener("submit", handleSubmit);
 function displayWeather(response) {
     let weatherDiv = document.querySelector("#temp-input");
     let temperature = Math.round(response.data.main.temp);
-    weatherDiv.innerHTML = `${temperature}°C`;
+    weatherDiv.innerHTML = `${temperature}°`;
 
     //fahrenheit temperature
     function displayFarenheitTemperature(event) {
         event.preventDefault();
         let temperatureElement = document.querySelector("#temp-input");
-        let fahrenheittemp = (temperature * 9) / 5 + 32;
+        let fahrenheittemp = (displayWeather * 9) / 5 + 32;
         temperatureElement.innerHTML = Math.round(fahrenheittemp);
     }
     let fahrenheitLink = document.querySelector("#farenheit-click");
@@ -110,10 +111,12 @@ function displayWeather(response) {
 
     function displayCelciustemp(event) {
         event.preventDefault();
-        let temperatureElement = document.querySelector("#temp-input");
-        temperatureElement.innerHTML = displayWeather;
+        let celciustemperatureElement = displayWeather;
     }
-    let celcuistemp = null;
+    let celciustemperatureElement = null;
+    let celciustLink = document.querySelector("#celcius-click");
+    fahrenheitLink.addEventListener("click", displayCelciustemp);
+
     //submitting the form
     let inputForm = document.querySelector("#search-form");
     inputForm.addEventListener("submit", handleSubmit);
