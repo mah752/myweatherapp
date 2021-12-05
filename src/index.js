@@ -121,6 +121,7 @@ function displayWeather(response) {
         "i",
         `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+
 }
 //pulls up exact coordinates or position
 function showPosition(position) {
