@@ -97,9 +97,12 @@ function displayWeather(response) {
         event.preventDefault();
         let temperatureElement = document.querySelector("#temp-input");
         let fahrenheittemp = (temperature * 9) / 5 + 32;
-        temperatureElement.innerHTML = Math.round(fahrenheittemp);
+        temperatureElement.innerHTML = Math.round(
+            fahrenheittemp
+        )
+        `${fahrenheittemp}°C`;
     }
-    let fahrenheitLink = document.querySelector("#farenheit-click");
+    let fahrenheitLink = document.querySelector(".faranheit");
     fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
 
     function displayCelciustemp(event) {
@@ -113,7 +116,7 @@ function displayWeather(response) {
     inputForm.addEventListener("submit", handleSubmit);
     //This city will show by default
     searchCity("London");
-    let celciusLink = document.querySelector("#celcius-click");
+    let celciusLink = document.querySelector(".celcius");
     celciusLink.addEventListener("click", displayCelciustemp);
     //current city
     let currentCity = response.data.name;
