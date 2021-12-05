@@ -86,7 +86,11 @@ function handleSubmit(event) {
     searchCity(cityInput);
 }
 
-
+//submitting the form
+let inputForm = document.querySelector("#search-form");
+inputForm.addEventListener("submit", handleSubmit);
+//This city will show by default
+searchCity("London");
 //current temperature
 function displayWeather(response) {
     let weatherDiv = document.querySelector("#temp-input");
@@ -110,11 +114,7 @@ function displayFarenheitTemperature(event) {
         temperatureElement.innerHTML = displayWeather;
     }
     let celcuistemp = null;
-    //submitting the form
-    let inputForm = document.querySelector("#search-form");
-    inputForm.addEventListener("submit", handleSubmit);
-    //This city will show by default
-    searchCity("London");
+
     let celciusLink = document.querySelector(".celcius");
     celciusLink.addEventListener("click", displayCelciustemp);
     //current city
