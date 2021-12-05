@@ -99,8 +99,7 @@ function displayWeather(response) {
         let fahrenheittemp = (temperature * 9) / 5 + 32;
         temperatureElement.innerHTML = Math.round(
             fahrenheittemp
-        )
-        `${fahrenheittemp}°C`;
+        );
     }
     let fahrenheitLink = document.querySelector(".faranheit");
     fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
