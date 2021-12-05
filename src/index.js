@@ -1,4 +1,4 @@
-//homework
+//getting the current date
 let now = new Date();
 
 console.log(now);
@@ -47,7 +47,7 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
     minutes = `0${minutes}`;
 }
-
+//displaying todays date and time
 let time = `${hours}:${minutes}`;
 console.log(time);
 let todayDate = `${day}, ${month} ${date}, ${year}`;
@@ -115,6 +115,12 @@ function displayWeather(response) {
     let currentForecastNow = response.data.weather[0].description;
     let forecastDescriptionnow = document.querySelector("#forecast-input");
     forecastDescriptionnow.innerHTML = `${currentForecastNow} `;
+    //getting the icon element to change
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute(
+        "i",
+        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 //pulls up exact coordinates or position
 function showPosition(position) {
@@ -127,7 +133,7 @@ function showPosition(position) {
     axios.get(url).then(displayWeather);
 }
 navigator.geolocation.getCurrentPosition(showPosition);
-// making the use my location button pull up current location
+// making the use my location button to pull up current location
 function getCurrentLocation(event) {
     event.preventDefault();
     navigator.geolocation.getCurrentPosition(showPosition);
