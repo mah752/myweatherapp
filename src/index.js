@@ -103,7 +103,7 @@ function displayWeather(response) {
     function displayFarenheitTemperature(event) {
         event.preventDefault();
         let temperatureElement = document.querySelector("#temp-input");
-        let fahrenheittemp = (displayWeather * 9) / 5 + 32;
+        let fahrenheittemp = ((displayWeather * 9) / 5 + 32);
         temperatureElement.innerHTML = Math.round(fahrenheittemp);
     }
     let fahrenheitLink = document.querySelector("#farenheit-click");
