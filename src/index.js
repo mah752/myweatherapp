@@ -134,3 +134,21 @@ function getCurrentLocation(event) {
 }
 let CurrentWeatherbyLocation = document.querySelector("#current-location");
 CurrentWeatherbyLocation.addEventListener("click", getCurrentLocation);
+
+//fahrenheit temperature
+function displayFarenheitTemperature(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temp-input");
+    let fahrenheittemp = ((displayWeather * 9) / 5 + 32);
+    temperatureElement.innerHTML = Math.round(fahrenheittemp);
+}
+let fahrenheitLink = document.querySelector("#farenheit-click");
+fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
+
+function displayCelciustemp(event) {
+    event.preventDefault();
+    let celciustemperatureElement = displayWeather;
+}
+let celciustemperatureElement = null;
+let celciustLink = document.querySelector("#celcius-click");
+fahrenheitLink.addEventListener("click", displayCelciustemp);
