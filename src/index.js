@@ -94,7 +94,8 @@ inputForm.addEventListener("submit", handleSubmit);
 
 function displayWeather(response) {
     //let weatherDiv = document.querySelector("#temp-input");
-    let temperature = Math.round(response.data.main.temp);
+    let temperature = document.querySelector("#temp=input");
+    temperature = Math.round(response.data.main.temp);
     //weatherDiv.innerHTML = `${temperature}°`;
 
     let currentCity = response.data.name;
