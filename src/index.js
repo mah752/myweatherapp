@@ -159,7 +159,7 @@ function displayCelsiusTemperature(event) {
     let temperatureElement = document.querySelector("#temp-input");;
 }
 
-let celsiusTemperature = null;
+//let celsiusTemperature = null;
 let fahrenheitLink = document.querySelector("#fahrenheit-click");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
