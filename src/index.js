@@ -95,31 +95,42 @@ function displayWeather(response) {
     let temperature = document.querySelector("#temp-input");
     temperature = Math.round(response.data.main.temp);
     celsiusTemperature = temperature;
+    temperature.innerHTML = `${temperature}°C `;
 
     let currentCity = response.data.name;
     let displaycurrentCity = document.querySelector("#city-input");
-    displaycurrentCity.innerHTML = `${currentCity}`;
+    displaycurrentCity.innerHTML = `
+    $ { currentCity }
+    `;
 
     let humidity = response.data.main.humidity;
     let humidityInput = document.querySelector("#humidity-input");
-    humidityInput.innerHTML = `${humidity}%`;
+    humidityInput.innerHTML = `
+    $ { humidity } % `;
 
     let windSpeed = Math.round(response.data.wind.speed);
     let windSpeedInfo = document.querySelector("#wind-input");
-    windSpeedInfo.innerHTML = `${windSpeed} km/h`;
+    windSpeedInfo.innerHTML = `
+    $ { windSpeed }
+    km / h `;
 
     let feelsLike = Math.round(response.data.main.feels_like);
     let feelsInput = document.querySelector("#feels-input");
-    feelsInput.innerHTML = `${feelsLike}°C`;
+    feelsInput.innerHTML = `
+    $ { feelsLike }°
+    C `;
 
     let currentForecastNow = response.data.weather[0].description;
     let forecastDescriptionnow = document.querySelector("#forecast-input");
-    forecastDescriptionnow.innerHTML = `${currentForecastNow} `;
+    forecastDescriptionnow.innerHTML = `
+    $ { currentForecastNow }
+    `;
 
     let iconElement = document.querySelector("#icon");
     iconElement.setAttribute(
         "src",
-        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+        `
+    http: //openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
 }
 //pulls up exact coordinates or position
@@ -159,7 +170,7 @@ function displayCelsiusTemperature(event) {
     let temperatureElement = document.querySelector("#temp-input");;
 }
 
-//let celsiusTemperature = null;
+let celsiusTemperature = null;
 let fahrenheitLink = document.querySelector("#fahrenheit-click");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
