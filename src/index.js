@@ -95,7 +95,6 @@ function displayWeather(response) {
     let temperature = document.querySelector("#temp-input");
     temperature = Math.round(response.data.main.temp);
     celsiusTemperature = temperature;
-    celsiusTemperature.innerHTML = `${temperature}°C`;
 
     let currentCity = response.data.name;
     let displaycurrentCity = document.querySelector("#city-input");
@@ -166,3 +165,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-click");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+celsiusTemperature.innerHTML = `${temperature}°C`;
