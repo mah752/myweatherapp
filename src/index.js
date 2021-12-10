@@ -95,6 +95,7 @@ function displayWeather(response) {
     let temperature = document.querySelector("#temp-input");
     temperature = Math.round(response.data.main.temp);
     celsiusTemperature = temperature;
+    celsiusTemperature.innerHTML = `${temperature}°C`;
 
     let currentCity = response.data.name;
     let displaycurrentCity = document.querySelector("#city-input");
@@ -140,6 +141,7 @@ function getCurrentLocation(event) {
 }
 let CurrentWeatherbyLocation = document.querySelector("#current-location");
 CurrentWeatherbyLocation.addEventListener("click", getCurrentLocation);
+//display current temperature
 
 //fahrenheit temperature
 function displayFahrenheitTemperature(event) {
@@ -155,8 +157,7 @@ function displayCelsiusTemperature(event) {
     event.preventDefault();
     celsiusLink.classList.add("active");
     fahrenheitLink.classList.remove("active");
-    let temperatureElement = document.querySelector("#temp-input");
-    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+    let temperatureElement = document.querySelector("#temp-input");;
 }
 
 let celsiusTemperature = null;
