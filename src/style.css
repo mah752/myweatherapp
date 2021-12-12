@@ -47,13 +47,14 @@
                 width: 50%;
                 border: 1px solid blue;
                 border-radius: 25px;
-                justify-content: center;
-                align-items: center;
             }
             
             .container {
                 width: 50%;
                 position: fixed;
+                padding: 20px 70px;
+                justify-content: center;
+                align-items: center;
             }
             
             .left,
