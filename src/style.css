@@ -133,7 +133,7 @@
             #myVideo {
                 width: 100% !important;
                 height: 100% !important;
-                position: fixed;
+                position: absolute;
                 left: 0;
                 right: 0;
                 top: 0;
