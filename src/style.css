@@ -80,18 +80,18 @@
                 clear: both;
             }
             
-            .celcius-click,
-            .faranheit-click {
+            #celcius-click,
+            #faranheit-click {
                 font-weight: bold;
                 font-size: 20px;
             }
             
-            .celcius-click:hover {
+            #celcius-click:hover {
                 color: rgba(255, 187, 0, 0.959);
                 cursor: pointer;
             }
             
-            .fahrenheit-click:hover {
+            #fahrenheit-click:hover {
                 color: rgba(255, 187, 0, 0.959);
                 cursor: pointer;
             }
