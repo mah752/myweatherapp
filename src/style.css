@@ -111,8 +111,8 @@
             }
             
             #myVideo {
-                width: auto;
-                height: auto;
+                width: 100% !important;
+                height: 100% !important;
                 position: fixed;
                 left: 0;
                 right: 0;
