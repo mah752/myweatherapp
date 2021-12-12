@@ -80,6 +80,7 @@
                 clear: both;
             }
             
+            a,
             #celsius-click,
             #faranheit-click {
                 font-weight: bold;
