@@ -51,12 +51,11 @@
             
             .container {
                 width: 100% !important;
-                height: auto !important;
+                height: 100% !important;
                 border-left: none;
                 border-right: none;
                 position: relative;
                 padding: 20px;
-                height: 50%;
             }
             
             .left,
