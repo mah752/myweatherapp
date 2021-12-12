@@ -50,12 +50,12 @@
             }
             
             .container {
-                width: 60%;
-                position: fixed;
-                padding: 20px 70px;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
+                width: 100% !important;
+                height: auto !important;
+                border-left: none;
+                border-right: none;
+                position: relative;
+                padding: 20px;
             }
             
             .left,
