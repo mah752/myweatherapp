@@ -92,10 +92,10 @@ let inputForm = document.querySelector("#search-form");
 inputForm.addEventListener("submit", handleSubmit);
 
 function displayWeather(response) {
-    let temperature = document.querySelector("#temp-input");
+    let temperatureElement = document.querySelector("#temp-input");
     temperature = Math.round(response.data.main.temp);
     celsiusTemperature = temperature;
-    temperature.innerHTML = `${temperature}°`;
+    temperatureElement.innerHTML = `${temperature}°`;
 
     let currentCity = response.data.name;
     let displaycurrentCity = document.querySelector("#city-input");
@@ -157,7 +157,8 @@ function displayCelsiusTemperature(event) {
     event.preventDefault();
     celsiusLink.classList.add("active");
     fahrenheitLink.classList.remove("active");
-    let temperatureElement = document.querySelector("#temp-input");;
+    let temperatureElement = document.querySelector("#temp-input");
+    temperatureElement.innerHTML = `${celsiusTemperature}°`;
 }
 
 let celsiusTemperature = null;
