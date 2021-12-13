@@ -136,7 +136,6 @@
                filter: brightness(60%);
            }
            
-           p,
            #sourcecode {
                position: absolute;
                bottom: 0;
