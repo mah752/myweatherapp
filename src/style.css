@@ -55,6 +55,7 @@
                height: 320px;
                text-align: center;
                border: none;
+               display: flex;
            }
            
            .left {
