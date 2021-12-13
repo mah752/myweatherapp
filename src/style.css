@@ -15,10 +15,10 @@
        }
        
        .card {
-           border-radius: 5px;
+           border-radius: 10px;
            box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
            background-color: #ffffff;
-           padding: 0.5px;
+           padding: 1px;
            margin: 0 auto;
            border: none;
        }
