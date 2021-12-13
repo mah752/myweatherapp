@@ -142,7 +142,7 @@
        #sourcecode {
            position: absolute;
            bottom: 0;
-           right: 0;
+           right: 50;
            color: gold;
            font-weight: bold;
        }
