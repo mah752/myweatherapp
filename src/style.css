@@ -16,7 +16,6 @@
                box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
                background-color: #ffffff;
                padding: 1px;
-               width: 50%;
                margin: 0 auto;
                border: none;
            }
@@ -53,6 +52,7 @@
                height: 200px;
                text-align: center;
                border: none;
+               height: auto;
            }
            
            .left {
