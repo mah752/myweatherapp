@@ -143,5 +143,5 @@
            position: absolute;
            align-items: center;
            color: gold;
-           font-weight: bold;
+           bottom: auto;
        }
