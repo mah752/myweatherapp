@@ -37,6 +37,8 @@
        
        button {
            margin: 10px 10px;
+           color: white;
+           background-color: rgba(3, 0, 43, 0.979);
        }
        
        .container {
@@ -88,6 +90,7 @@
        #fahrenheit-click {
            font-weight: bold;
            font-size: 20px;
+           color: white;
        }
        
        #celsius-click:hover {
