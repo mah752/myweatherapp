@@ -5,6 +5,11 @@
            border: none;
            color: white;
            padding: 1px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           flex-direction: column
        }
        
        * {
@@ -18,7 +23,6 @@
            padding: 0.5px;
            margin: 0 auto;
            border: none;
-           height: 100%;
        }
        
        h1 {
