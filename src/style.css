@@ -35,8 +35,7 @@
            margin: 0 auto;
        }
        
-       .btn btn-primary {
-           margin: 10px 10px;
+       button {
            color: white;
            background-color: rgba(3, 0, 43, 0.979);
        }
