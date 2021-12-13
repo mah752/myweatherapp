@@ -1,9 +1,6 @@
            body {
                font-family: "Ubuntu Mono", monospace;
-               margin-left: 80px;
-               margin-right: 80px;
-               margin-bottom: 10px;
-               margin-top: 10px;
+               margin: 0 auto;
                background-color: rgba(25, 144, 241, 0.479);
                border: none;
                color: white;
@@ -23,14 +20,15 @@
                width: 100%;
                max-width: 500px;
                margin: 1em;
+               display: flex;
            }
            
            h1 {
-               font-size: 20px;
+               font-size: 15px;
            }
            
            h2 {
-               font-size: 20px;
+               font-size: 10px;
            }
            
            footer {
@@ -42,16 +40,10 @@
                margin: 10px 10px;
            }
            
-           .border {
-               margin: auto;
-               width: 50%;
-               border: 1px solid blue;
-               border-radius: 25px;
-           }
-           
            .container {
                position: relative;
                padding: 20px;
+               display: flex;
            }
            
            .left,
