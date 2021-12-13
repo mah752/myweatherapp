@@ -18,6 +18,8 @@
                padding: 1px;
                margin: 0 auto;
                border: none;
+               width: auto;
+               height: auto;
            }
            
            h1 {
