@@ -44,11 +44,10 @@
        .container {
            position: relative;
            padding: 15px;
-           margin: 1px auto;
+           margin: 0 auto;
            width: 600px;
            height: 250px;
            border-radius: 10px;
-           box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
        }
        
        .left,
