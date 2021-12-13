@@ -17,12 +17,12 @@
 
 <body>
     <div class="container">
-        <div class="video-container">
-            <video autoplay muted loop id="myVideo">
+        <div class="card">
+            <div class="video-container">
+                <video autoplay muted loop id="myVideo">
             <source src="images/birds.mp4" type="video/mp4" />
           </video>
-        </div>
-        <div class="card">
+            </div>
             <section id="banner" class="your-city">
                 <header>
                     <form id="search-form">
@@ -51,7 +51,7 @@
 
             <section>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm">
                         <div class="card">
                             <div class="card-body">
                                 <h1 class="city" id="city-input">Birmingham</h1>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm">
                         <div class="card">
                             <div class="card-body">
                                 <h2>
@@ -83,75 +83,82 @@
                             </div>
                         </div>
                     </div>
+                    <section id="dayforecast" class="forecast">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="left">
+                                    <h1>Monday</h1>
+                                    <br />
+                                    <h1>Tuesday</h1>
+                                    <br />
+
+                                    <h1>Wednesday</h1>
+                                    <br />
+
+                                    <h1>Thursday</h1>
+                                    <br />
+
+                                    <h1>Friday</h1>
+                                    <br />
+                                </div>
+
+                                <div class="center">
+                                    <h1>15°</h1>
+                                    <br />
+
+                                    <h1>17°</h1>
+                                    <br />
+
+                                    <h1>10°</h1>
+                                    <br />
+
+                                    <h1>14°</h1>
+                                    <br />
+
+                                    <h1>12°</h1>
+                                    <br />
+                                </div>
+                                <div class="right">
+                                    <h1><i class="fas fa-cloud-sun"></i></h1>
+                                    <br />
+
+                                    <h1><i class="fas fa-cloud"></i></h1>
+                                    <br />
+
+                                    <h1><i class="fas fa-sun"></i></h1>
+                                    <br />
+
+                                    <h1><i class="fas fa-cloud-showers-heavy"></i></h1>
+                                    <br />
+
+                                    <h1><i class="fas fa-wind"></i></h1>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </section>
             <br />
-            <section id="dayforecast" class="forecast">
-                <div class="left">
-                    <h1>Monday</h1>
-                    <br />
-                    <h1>Tuesday</h1>
-                    <br />
 
-                    <h1>Wednesday</h1>
-                    <br />
 
-                    <h1>Thursday</h1>
-                    <br />
-
-                    <h1>Friday</h1>
-                    <br />
-                </div>
-
-                <div class="center">
-                    <h1>15°</h1>
-                    <br />
-
-                    <h1>17°</h1>
-                    <br />
-
-                    <h1>10°</h1>
-                    <br />
-
-                    <h1>14°</h1>
-                    <br />
-
-                    <h1>12°</h1>
-                    <br />
-                </div>
-                <div class="right">
-                    <h1><i class="fas fa-cloud-sun"></i></h1>
-                    <br />
-
-                    <h1><i class="fas fa-cloud"></i></h1>
-                    <br />
-
-                    <h1><i class="fas fa-sun"></i></h1>
-                    <br />
-
-                    <h1><i class="fas fa-cloud-showers-heavy"></i></h1>
-                    <br />
-
-                    <h1><i class="fas fa-wind"></i></h1>
-                    <br />
-                </div>
-            </section>
-            <br />
-            <footer>
-                <div id="sourcecode">
-                    <strong><a href="https://github.com/mah752/myweatherapp"
-                >Open source code by Maryan
-              </a></strong
-            >
-          </div>
-
-          <button type="button " class="btn btn-primary" style="float: right">
+        </div>
+        <br />
+        <footer>
+            <button type="button " class="btn btn-primary" style="float: right">
             Share
           </button>
         </footer>
-      </div>
+
     </div>
-</div>
+    </div>
+    <div id="sourcecode">
+        <strong><a href="https://github.com/mah752/myweatherapp"
+                >Open source code by Maryan
+              </a></strong>
+    </div>
     <script src="src/index.js"></script>
-  </body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+</body>
+
 </html>
