@@ -41,6 +41,8 @@
                position: relative;
                padding: 5px;
                margin: 0 auto;
+               width: auto;
+               height: auto;
            }
            
            .left,
