@@ -108,7 +108,7 @@
            
            #dayforecast {
                width: auto;
-               height: 100px;
+               height: auto;
            }
            
            #dayforecast .forecast i,
