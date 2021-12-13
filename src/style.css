@@ -42,7 +42,6 @@
            .container {
                position: relative;
                padding: 5px;
-               display: flex;
                margin: 0 auto;
            }
            
