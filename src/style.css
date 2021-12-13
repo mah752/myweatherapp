@@ -1,153 +1,150 @@
-            body {
-                font-family: "Ubuntu Mono", monospace;
-                margin-left: 80px;
-                margin-right: 80px;
-                margin-bottom: 10px;
-                margin-top: 10px;
-                background-color: rgba(25, 144, 241, 0.479);
-                border: none;
-                color: white;
-                padding: 5px;
-            }
-            
-            * {
-                box-sizing: border-box;
-            }
-            
-            .card {
-                border-radius: 10px;
-                box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
-                background-color: #FFFFFF;
-                padding: 2em;
-                border-radius: 30px;
-                width: 100%;
-                max-width: 500px;
-                margin: 1em;
-            }
-            
-            h1 {
-                font-size: 20px;
-            }
-            
-            h2 {
-                font-size: 20px;
-            }
-            
-            footer {
-                margin-bottom: 10px;
-                margin-left: 10px;
-            }
-            
-            button {
-                margin: 10px 10px;
-            }
-            
-            .border {
-                margin: auto;
-                width: 50%;
-                border: 1px solid blue;
-                border-radius: 25px;
-            }
-            
-            .container {
-                width: 100% !important;
-                height: 100% !important;
-                border-left: none;
-                border-right: none;
-                position: relative;
-                padding: 20px;
-            }
-            
-            .left,
-            .right,
-            .center {
-                float: left;
-                width: 33%;
-                color: white;
-                height: 320px;
-                text-align: center;
-                border: none;
-            }
-            
-            .left {
-                background-color: rgba(25, 144, 241, 0.3);
-                border-left: 1px solid rgb(0, 85, 155);
-                border-top: 1px solid rgb(0, 85, 155);
-                border-bottom: 1px solid rgb(0, 85, 155);
-            }
-            
-            .right {
-                background-color: rgba(25, 144, 241, 0.3);
-                border-right: 1px solid rgb(0, 85, 155);
-                border-top: 1px solid rgb(0, 85, 155);
-                border-bottom: 1px solid rgb(0, 85, 155);
-            }
-            
-            .center {
-                background-color: rgba(25, 144, 241, 0.3);
-                border-top: 1px solid rgb(0, 85, 155);
-                border-bottom: 1px solid rgb(0, 85, 155);
-            }
-            
-            .container:after {
-                clear: both;
-            }
-            
-            #celsius-click,
-            #fahrenheit-click {
-                font-weight: bold;
-                font-size: 20px;
-            }
-            
-            #celsius-click:hover {
-                color: rgba(255, 187, 0, 0.959);
-                cursor: pointer;
-            }
-            
-            #fahrenheit-click:hover {
-                color: rgba(255, 187, 0, 0.959);
-                cursor: pointer;
-            }
-            
-            #searchicon:hover {
-                cursor: pointer;
-            }
-            
-            .card {
-                background-color: rgba(25, 144, 241, 0.2);
-            }
-            
-            #dayforecast .forecast i,
-            h1 {
-                margin-top: 10px;
-            }
-            
-            video-container {
-                position: absolute;
-                top: 0%;
-                left: 0%;
-                height: 100%;
-                width: 100%;
-                max-width: 500px;
-                overflow: hidden;
-            }
-            
-            #myVideo {
-                width: 100% !important;
-                height: 100% !important;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                z-index: -1;
-                filter: brightness(60%);
-            }
-            
-            #sourcecode {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                color: gold;
-                font-weight: bold;
-            }
+           body {
+               font-family: "Ubuntu Mono", monospace;
+               margin-left: 80px;
+               margin-right: 80px;
+               margin-bottom: 10px;
+               margin-top: 10px;
+               background-color: rgba(25, 144, 241, 0.479);
+               border: none;
+               color: white;
+               padding: 5px;
+           }
+           
+           * {
+               box-sizing: border-box;
+           }
+           
+           .card {
+               border-radius: 10px;
+               box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+               background-color: #ffffff;
+               padding: 2em;
+               border-radius: 30px;
+               width: 100%;
+               max-width: 500px;
+               margin: 1em;
+           }
+           
+           h1 {
+               font-size: 20px;
+           }
+           
+           h2 {
+               font-size: 20px;
+           }
+           
+           footer {
+               margin-bottom: 10px;
+               margin-left: 10px;
+           }
+           
+           button {
+               margin: 10px 10px;
+           }
+           
+           .border {
+               margin: auto;
+               width: 50%;
+               border: 1px solid blue;
+               border-radius: 25px;
+           }
+           
+           .container {
+               position: relative;
+               padding: 20px;
+           }
+           
+           .left,
+           .right,
+           .center {
+               float: left;
+               width: 33%;
+               color: white;
+               height: 320px;
+               text-align: center;
+               border: none;
+           }
+           
+           .left {
+               background-color: rgba(25, 144, 241, 0.3);
+               border-left: 1px solid rgb(0, 85, 155);
+               border-top: 1px solid rgb(0, 85, 155);
+               border-bottom: 1px solid rgb(0, 85, 155);
+           }
+           
+           .right {
+               background-color: rgba(25, 144, 241, 0.3);
+               border-right: 1px solid rgb(0, 85, 155);
+               border-top: 1px solid rgb(0, 85, 155);
+               border-bottom: 1px solid rgb(0, 85, 155);
+           }
+           
+           .center {
+               background-color: rgba(25, 144, 241, 0.3);
+               border-top: 1px solid rgb(0, 85, 155);
+               border-bottom: 1px solid rgb(0, 85, 155);
+           }
+           
+           .container:after {
+               clear: both;
+           }
+           
+           #celsius-click,
+           #fahrenheit-click {
+               font-weight: bold;
+               font-size: 20px;
+           }
+           
+           #celsius-click:hover {
+               color: rgba(255, 187, 0, 0.959);
+               cursor: pointer;
+           }
+           
+           #fahrenheit-click:hover {
+               color: rgba(255, 187, 0, 0.959);
+               cursor: pointer;
+           }
+           
+           #searchicon:hover {
+               cursor: pointer;
+           }
+           
+           .card {
+               background-color: rgba(25, 144, 241, 0.2);
+               overflow: hidden;
+               margin: 0 auto;
+           }
+           
+           #dayforecast .forecast i,
+           h1 {
+               margin-top: 10px;
+           }
+           
+           video-container {
+               position: absolute;
+               top: 0%;
+               left: 0%;
+               height: 100%;
+               width: 100%;
+               max-width: 500px;
+               overflow: hidden;
+           }
+           
+           #myVideo {
+               height: 100% !important;
+               position: absolute;
+               left: 0;
+               right: 0;
+               top: 0;
+               bottom: 0;
+               z-index: -1;
+               filter: brightness(60%);
+           }
+           
+           #sourcecode {
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               color: gold;
+               font-weight: bold;
+           }
