@@ -43,7 +43,7 @@
        
        .container {
            position: relative;
-           padding: 2px;
+           padding: 5px;
            margin: 0 auto;
            width: 600px;
            height: 250px;
@@ -141,7 +141,7 @@
        
        #sourcecode {
            position: absolute;
-           bottom: 30%;
+           bottom: 10%;
            align-items: center;
            color: gold;
            font-weight: bold;
