@@ -63,15 +63,15 @@
        }
        
        .left {
-           background-color: rgba(25, 144, 241, 0.7);
+           background-color: rgba(25, 144, 241, 0.05);
        }
        
        .right {
-           background-color: rgba(25, 144, 241, 0.7);
+           background-color: rgba(25, 144, 241, 0.05);
        }
        
        .center {
-           background-color: rgba(25, 144, 241, 0.7);
+           background-color: rgba(25, 144, 241, 0.05);
        }
        
        .container:after {
