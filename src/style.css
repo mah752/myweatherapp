@@ -64,22 +64,14 @@
        
        .left {
            background-color: rgba(25, 144, 241, 0.3);
-           border-left: 1px solid rgb(0, 85, 155);
-           border-top: 1px solid rgb(0, 85, 155);
-           border-bottom: 1px solid rgb(0, 85, 155);
        }
        
        .right {
            background-color: rgba(25, 144, 241, 0.3);
-           border-right: 1px solid rgb(0, 85, 155);
-           border-top: 1px solid rgb(0, 85, 155);
-           border-bottom: 1px solid rgb(0, 85, 155);
        }
        
        .center {
            background-color: rgba(25, 144, 241, 0.3);
-           border-top: 1px solid rgb(0, 85, 155);
-           border-bottom: 1px solid rgb(0, 85, 155);
        }
        
        .container:after {
