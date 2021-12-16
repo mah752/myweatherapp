@@ -134,6 +134,9 @@
        footer,
        #sourcecode {
            position: absolute;
-           align-items: center;
            color: gold;
+           position: fixed;
+           bottom: 0px;
+           width: 400px;
+           text-align: center;
        }
