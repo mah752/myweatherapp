@@ -133,7 +133,7 @@
        
        #sourcecode {
            position: absolute;
-           align-items: center;
+           left: 0;
            color: gold;
            bottom: 0;
        }
