@@ -144,6 +144,24 @@ searchCity("London");
 
 let inputForm = document.querySelector("#search-form");
 inputForm.addEventListener("submit", handleSubmit);
+//pulls up exact coordinates or position
+function showPosition(position) {
+    console.log(position.coords.latitude);
+    console.log(position.coords.longitude);
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let apiKey = "febefd1d6644733b2b93ae16a04f89ef";
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(url).then(displayWeather);
+}
+navigator.geolocation.getCurrentPosition(showPosition);
+// making the use my location button pull up current location
+function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(showPosition);
+}
+let CurrentWeatherbyLocation = document.querySelector("#current-location");
+CurrentWeatherbyLocation.addEventListener("click", getCurrentLocation);
 
 function displayWeather(response) {
     let temperatureElement = document.querySelector("#temp-input");
@@ -176,25 +194,9 @@ function displayWeather(response) {
         "src",
         `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+    showPosition(response.data.coord);
 }
-//pulls up exact coordinates or position
-function showPosition(position) {
-    console.log(position.coords.latitude);
-    console.log(position.coords.longitude);
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.longitude;
-    let apiKey = "febefd1d6644733b2b93ae16a04f89ef";
-    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-    axios.get(url).then(displayWeather);
-}
-navigator.geolocation.getCurrentPosition(showPosition);
-// making the use my location button pull up current location
-function getCurrentLocation(event) {
-    event.preventDefault();
-    navigator.geolocation.getCurrentPosition(showPosition);
-}
-let CurrentWeatherbyLocation = document.querySelector("#current-location");
-CurrentWeatherbyLocation.addEventListener("click", getCurrentLocation);
+
 //display current temperature
 
 //fahrenheit temperature
