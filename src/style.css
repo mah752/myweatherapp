@@ -134,7 +134,7 @@
        footer,
        #sourcecode {
            position: absolute;
-           left: 0;
+           align-items: center;
            color: gold;
            bottom: 0;
        }
