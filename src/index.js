@@ -10,9 +10,26 @@ console.log(date);
 let milliseconds = now.getMilliseconds();
 console.log(milliseconds);
 //days
-let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-let day = days[now.getDay()];
-console.log(day);
+let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+];
+let day = days[date.getDay()];
+return `${day} ${hours}:${minutes}`;
+
+function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[day];
+}
+//console.log(day);
 
 //year
 let year = now.getFullYear();
@@ -61,18 +78,12 @@ let current = new Date();
 let dateTime = document.querySelector("#day-input");
 dateTime.innerHTML = formattedDate(current);
 // display forecast function 
-function formatDay(timestamp) {
-    let date = new Date(timestamp * 1000);
-    let day = date.getDay();
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-    return days[day];
-}
 
 function displayForecast(response) {
     let forecast = response.data.daily;
 
-    let forecastElement = document.querySelector("#forecast");
+    let forecastElement = document.querySelector("#forecast-fivedays");
 
     let forecastHTML = `<div class="row">`;
     forecast.forEach(function(forecastDay, index) {
