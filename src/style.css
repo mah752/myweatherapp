@@ -131,6 +131,7 @@
            filter: brightness(60%);
        }
        
+       footer,
        #sourcecode {
            position: absolute;
            left: 0;
