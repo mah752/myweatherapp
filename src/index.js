@@ -60,7 +60,15 @@ console.log(formattedDate(new Date()));
 let current = new Date();
 let dateTime = document.querySelector("#day-input");
 dateTime.innerHTML = formattedDate(current);
-// display forecast function displayForecast(response) {
+// display forecast function 
+function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[day];
+}
+
 function displayForecast(response) {
     let forecast = response.data.daily;
 
